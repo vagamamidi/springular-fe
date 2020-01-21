@@ -1,0 +1,74 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="src/assets/img/springboot-angular.png" width="80" height="30" alt="">
+      Springular
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">
+            Products
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Product 1</a>
+            <a class="dropdown-item" href="#">Product 2</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Another Product</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- <div class="jumbotron">
+    <h1 class="display-3">Simple. Elegant. Awesome.</h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. </p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+  </div> -->
+  <div class="row">
+    <div class="col">
+      <div class="card mt-4">
+        <div class="card-body text-center">
+          <h5 class="card-title">Countries</h5>
+          <button class="btn btn-primary" (click)="onGetCountries()">Get Countries</button>
+          <table class="table table-striped table-bordered table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th>Country ID</th>
+                <th>Country Name</th>
+                <th>Region ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let country of countries">
+                <td>{{country.countryId}}</td>
+                <td>{{country.countryName}}</td>
+                <td>{{country.region}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="card-link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

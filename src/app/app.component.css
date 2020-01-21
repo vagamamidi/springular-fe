@@ -1,0 +1,9 @@
+.row.content {
+    height: 900px
+}
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #adffba;
+    height: 100%;
+}
